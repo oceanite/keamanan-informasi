@@ -68,7 +68,7 @@ S_BOX = [
 ]
 
 # -----------------------------------------
-# Fungsi bantu
+# Fungsi 
 # -----------------------------------------
 def string_to_bit_array(text):
     return [int(bit) for char in text for bit in bin(ord(char))[2:].zfill(8)]
