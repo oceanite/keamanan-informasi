@@ -1,1 +1,15 @@
+📄 Tugas 2
 
+🗿1    send   🗿2
+Encr ----------> Decr
+
+vice versa (bolak balik), dan key diketahui dua duanya
+
+jad 2 device trus ada komunikasinya
+
+DL: 2 minggu lagi
+
+Ketentuan: bisa kelompokan maksimal 2 orang
+komunikasi dibebaskan boleh dengan tcp udp http
+
+environment boleh physical maupun logical (antar vm, atau pakai lan antar pc juga bole)
