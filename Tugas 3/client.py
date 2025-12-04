@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import socket
 import threading
 import struct
@@ -10,13 +9,9 @@ from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_OAEP
 from Crypto.Random import get_random_bytes
 
-# DES CBC dari tugasmu sebelumnya
+#DES dari tugas sebelumnya
 from des import encrypt_cbc, decrypt_cbc
 
-
-# ----------------------
-# Helper I/O
-# ----------------------
 def recv_all(sock, n):
     buf = b''
     while len(buf) < n:
@@ -40,9 +35,8 @@ def recv_framed(sock):
     return recv_all(sock, length)
 
 
-# ----------------------
-# RSA Helper
-# ----------------------
+
+#RSA 
 def rsa_encrypt(pubkey, data_bytes):
     cipher = PKCS1_OAEP.new(pubkey)
     return cipher.encrypt(data_bytes)
